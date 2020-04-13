@@ -1,0 +1,109 @@
+Requirements and user stories for the bakery app that i'm building as a project for software engineering 1 class.
+
+This is an order-online pick-at-store bakery (BOPIS).
+
+Customer:
+    I arrive at the page and see a banner with beautiful bread
+    I want to buy bread or see what this site is about
+    I can find the catalog right away
+    I can navigate to a page that shows me what this site/app is about
+    I can see contact information for the bakery
+    I can see this site has copyright and the address
+
+    about section
+        I can see what they do
+        I can see who is in charge
+        I can find out how to contact by phone or email
+        I can find their adress and map location
+        I can see the store schedule
+
+    Catalog:
+        I can start buying right away
+        I can see a list or grid of breads
+        There's a more button I can click to see more products.
+        For each bread I can see name, price, image, cost. I can click a button for more info or to add to cart.
+        If i click for info I see all of the bove plus bread description and nutritional information in the center of my screen.
+        For each item type I have added to my cart there is some special icon or border so I can see them without having to enter cart.
+        I can remove one or all of that item from my cart.
+        There is a number picker thet shows up when I add an item. When I hit to add to cart, the number picker shows up beside it.
+
+
+    Cart:
+        I can see a tooltip of my cart with the amount of items and the total purchase cost
+        If I hover it I can see a summary of my cart with name, amount and price for the top 5 items and a "view more" button.
+        If I click my cart, I can see a box detailing my entire current purchase information as well as my current username.
+        While buying, if I'm not logged in, it shows a login link undeer it.
+        I can remove items from my cart
+        I can clear my cart (delete entire order)
+        I can change the amount of items from within my cart.
+        I can increase the number of an item already  within my cart
+        When I hit to add more items, I get back to current catalog.
+        I can hit  buy button. It has an info link beside it that shows a tooltip with payment options. If I hit read more, it opens the about page on the payment methods section.
+        It shows me a delivery date (next day?) and a message, as well as an icon to pick a different date.
+
+        Buy:
+            It shows me a summary of my cart with item, price, remove item and total cost.
+            I can choose my payment option to pay online or pay at store
+            I can fill in a name, lastname and phone number
+            If not logged in, it shows me the order number and a message to keep it for reference to call to edit or cancel my order. It also shows up till when I can edit or cancel order.
+            It shows the date of my purchase.
+
+    Login:
+        when I hit login, It shows a form with username, password, submit button, create account, why create account link + info paragraph on how I can still buy, keep navigating as visitor (which also closes the form), and a close button.
+        If a member, logging in adds the dashboard icon. when I hit it, I can choose account info (edit), my dashboard (to see my orders), and sign out.
+        If an admin, I just have to type in username and password and will be taken to my dashboard. (Admin accounts are "non existent" for normal users) (more on admins later)
+
+        New account:
+            Takes me to a form with name, lastname, password confirm password, phone number and create account. Also has a close / cancel button.
+            When I hit submit, account is created and icon shows up.
+
+    customer dashboard:
+        Shows a list of orders by date. Only shows last delivered order and all current active orders.
+        My orders:
+            I can see a delete and edit icon on every order.
+            Editable and non editable orders have slightly different appearance. Also show edit expiration date.
+            Each order shows items, item amounts, and total cost. full order shown on edit.
+            When within edit, I can see cart, but only with cancel and confirm changes. Shows new price.
+        My info:
+            Name, lastname, phone number, address, delete account. Allows editing address & phone number.
+        Sign out button
+
+    Admin dashboard:
+        Shows a navbar to catalog, orders, members, recipes and inventory.
+
+        Catalog
+            I can add or remove items from catalog.
+            I can edit catalog items (price, availability, description)
+            I can add a discount by percentage and date.
+
+        orders
+            I can see a list of orders by date.
+            running orders look different from finished orders.
+            I can mark an order as delivered, ready, running or cancelled.
+            Each order has date, order number and/or member name, and price.
+            I can manually cancel (later edit a customer's order).
+            I can clear delivered orders.
+
+        Members:
+            I can see a list of members.
+            Each member has a name, amount of running orders, total orders, member since date.
+            I can do all of the same things as with orders.
+            I can apply discounts to members
+
+            Note: I should make discounts work on customer's dashboard, on every cart within discount date, and on client's catalog when logged in.
+
+        *Discounts:
+            work on these later
+
+        
+        /* --Deprecated until full version
+        Recipes:
+            I can see a list of my recipes
+            I can see if a recipe is in catalog or not.
+            When I click on a recipe, I can see a box with the recipe.
+            I can see a recipe
+
+            */
+
+        Inventory:
+        I can see a full list of my ingredients with name, date, expiration date, supplier, brand.
